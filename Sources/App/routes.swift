@@ -3,8 +3,9 @@ import Foundation
 
 func routes(_ app: Application) throws {
     
-    app.get { req -> Response in
-        return Response(status: .accepted, body: HomePage())
+    app.get { req async throws -> View in
+        return try await req.view.render("home", ["title": "Vapor Home",
+                                                  "body": ""])
     }
   
     app.get("hello") { req async throws -> View in

@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Anton Hibl on 4/8/22.
-//
-
 import Vapor
 
 // Tea Brewer
@@ -43,12 +36,3 @@ func BrewTea()->Response.Body {
         """)
     return tea
 }
-
-// Homepage
-func HomePage()->Response.Body {
-    let homepage = Response.Body.init(string: """
-
-""")
-    return homepage
-}
-
