@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#(title)</title>
+    <link rel="stylesheet" href="/Styles/home.css">
 </head>
 <body>
     <h1>Hello, my name is <em id="special">Anton<em>.</h1>
     <main>
         #(body)
+        <details>
+            <summary>site navigation</summary>
+            <p>Home</p>
+            <p>Tea</p>
+            <p>Hello</p>
+        </details>
     </main>
 </body>
 </html>
