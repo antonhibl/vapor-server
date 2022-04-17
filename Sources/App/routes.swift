@@ -2,6 +2,7 @@ import Vapor
 import Foundation
 import Fluent
 import FluentPostgresDriver
+import CryptoKit
 
 func routes(_ app: Application) throws {
     
@@ -12,6 +13,10 @@ func routes(_ app: Application) throws {
   
     app.get("hello") { req async throws -> View in
         return try await req.view.render("hello", ["name": "Leaf"])
+    }
+    
+    app.get("life") { req async throws -> View in
+        return try await req.view.render("life")
     }
     
     app.get("teapot") { req -> Response in

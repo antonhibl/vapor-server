@@ -48,6 +48,7 @@ public func configure(_ app: Application) throws {
     app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
     // load in postgreSQL database
     app.databases.use(.postgres(hostname: "localhost", username: "postgres", password: "", database: "kibby"), as: .psql)
+    // migrate galaxy table from database
     app.migrations.add(CreateGalaxy())
     // Leaf Templating engine
     app.views.use(.leaf)

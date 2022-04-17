@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/Styles/home.css">
 </head>
 <body>
-    <h1>Hello, my name is <em id="special">Anton<em>.</h1>
+    <h1>Hello, my name is <em id="special">Anton</em>.</h1>
     <main>
         #(body)
         <details>
@@ -17,6 +17,8 @@
             <p>Tea</p>
             <p>Hello</p>
         </details>
+		<canvas width="500" height="300" id="canvas"></canvas>
+		<script defer src="/Scripts/home.js"></script>
     </main>
 </body>
 </html>
